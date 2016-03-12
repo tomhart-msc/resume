@@ -1,0 +1,98 @@
+\documentclass[11pt,letterpaper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Tom}
+\familyname{Hart}
+\title{Software Developer}
+\mobile{}
+\email{@gmail.com}
+
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\begin{document}
+\maketitle
+
+\section{Skills}
+\cventry{Languages}{Java, C/C++, Ruby}{}{}{}{}
+\cventry{Other Skills}{JUnit, Mockito, Agile, Scrum, git, Mercurial, ClearCase, ClearQuest, JIRA, Eclipse, XML, Cucumber, regular expressions, concurrency.}{}{}{}{}
+
+
+\section{Experience}
+
+\cventry{2014--present}
+{Senior Software Developer}
+{Rapid7}
+{}{}
+{
+As a Senior Software Developer in the Data Collection and Assessment group, I have worked on high-performance concurrent data collection for the Nexpose scan engine, including scan engine pooling and multi-engine scanning. As head of a team within this group, I was responsible for the Asset Configuration Export feature of Nexpose 6.0. I maintain an interest in vulnerability check automation in my current position. As self-directed projects, I contributed automated vulnerability coverage for VMware Player, Workstation, and Fusion, and for FreeBSD. I also developed a domain-specific language for fingerprinting web applications using XPath and regular expressions. I work to increase my velocity and that of my team by aggressively finding ways to convert end-to-end tests into unit tests or integration tests. \\
+\textbf{Tools used:} Java, JUnit, Eclipse, XML, Cucumber, git, JIRA.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2012--2014}
+{Security Researcher}
+{Rapid7}
+{}{}
+{
+As a member of the vulnerability coverage team for Rapid7 Nexpose, I was responsible for writing and maintaining automation which scraped the web for new vulnerabilities, identified the software versions in which they were fixed, and created vulnerability content based on this information. In this role, I also wrote extensions to Nexpose to identify various software artifacts running on customer systems, and extended Nexpose to make writing new vulnerability checks easier. The team followed an integrated development model in which everyone was responsible for both development and testing, including the creation of test systems. The team and I pushed several of our ad-hoc testing scenarios into more formal regression tests that could be run by developers who are not experts in vulnerability scanning, resulting in fewer escaped defects. \\
+\textbf{Tools used:} Ruby, XML, XPath, regular expressions, Java, Jess, JUnit, Cucumber, VSphere, Mercurial, JIRA.
+}
+
+
+\vspace*{0.2\baselineskip}
+\cventry{2008--2012}
+{Staff Software Developer}
+{IBM Canada}
+{}{}
+{
+As a software developer for DB2 for Linux, Unix, and Windows at IBM Canada, I contributed to the DB2 9.7, 9.8, and 10.1 releases. I worked on the BufferPool Services team, which was responsible for the physical storage of data on disk (tablespaces, storage groups, etc.), bringing that data into memory as pages, and ensuring the integrity of the data in a highly concurrent environment. Much of the work involved debugging race conditions, including races involving storage shared across multiple computers, which could lead to crashes or database corruptions if not fixed. As a specialist in on-disk storage, I helped bring the multi-temperature storage feature to market in DB2 10.1, including creating DDL statements for manipulating storage groups. Additionally, I took ownership of a storage-based set of regression tests, and improved their usability by labeling test scenarios of most importance to different groups (e.g. backup and recovery). \\
+\textbf{Tools used:} C/C++, gdb, Perl, ClearCase, ClearQuest. 
+}
+
+\section{Education}
+\cventry{2003-2005}{M.Sc. in Computer Science}{University of Toronto}{2005}{}{}
+\cventry{1999-2003}{B.Sc. in Mathematics and Computer Science}{Brandon University}{}{}{}
+
+\section{Certifications}
+\cventry{2012-2014}{Certified ScrumMaster}{Scrum Alliance, Inc.}{}{}{}
+
+\section{Publications}
+
+\cventry{2008}
+{\textbf{Thomas E. Hart}\textnormal{, Marsha Chechik, and David Lie}}
+{Security Benchmarking using Partial Verification}
+{In Proc. HotSec’08}
+{}{}{}
+
+\cventry{2008}
+{\textbf{Thomas E. Hart}\textnormal{, Kelvin Ku, David Lie, Marsha Chechik, and Arie Gurfinkel}}
+{Augmenting Counterexample-Guided Abstraction Refinement with Proof Templates}
+{In Proc. ASE’08}
+{}{}{}
+
+\cventry{2006}
+{\textbf{Thomas E. Hart}\textnormal{, Paul E. McKenney, and Angela Demke Brown}}
+{Making Lockless Synchronization Fast: Performance Implications of Memory Reclamation}
+{In Proc. IPDPS'06}
+{}{}{}
+
+\section{Awards}
+\cventry{2011}{First Place, Area 22 Toastmasters International Speech Contest}{}{}{}{}
+\cventry{2006}{Best Paper Award, IPDPS 2006}{}{}{}{}
+\cventry{2005,2006,2007}{T-Holder’s Award for Academic Excellence}{}{}{}{}
+\cventry{2003-2007}{NSERC Canada Graduate Scholarship}{}{}{}{}
+\cventry{2003}{Governor-General's Silver Medal}{}{}{}{}
+
+\end{document}
